@@ -5,7 +5,7 @@ from flask import Flask
 from threading import Thread
 
 # ===== TELEGRAM CONFIG FROM RENDER ENV =====
-BOT_TOKEN = os.environ.get("8799365492:AAHKddVToj54YnNmwB23Ww3m0SrYJqIpae4")
+BOT_TOKEN = os.environ.get("BOT_TOKEN")
 CHAT_ID = os.environ.get("5954672110")
 
 # ===== PRODUCTS =====
@@ -16,7 +16,7 @@ PRODUCTS = {
     "Casio Enticer": "https://www.flipkart.com/casio-mtp-1302ds-1avdf-enticer-men-analog-watch/p/itmce100b2bc44b8?pid=WATHGXZJPAFYNHZN"
 }
 
-CHECK_INTERVAL = 90  # safer interval
+CHECK_INTERVAL = 60  # safer interval
 
 # ===== FLASK APP =====
 app = Flask(__name__)
@@ -72,4 +72,5 @@ def run_background():
 
 if __name__ == "__main__":
     run_background()
+
     app.run(host="0.0.0.0", port=10000)
