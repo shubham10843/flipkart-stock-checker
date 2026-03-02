@@ -16,7 +16,7 @@ PRODUCTS = {
     "Casio Enticer": "https://www.flipkart.com/casio-mtp-1302ds-1avdf-enticer-men-analog-watch/p/itmce100b2bc44b8?pid=WATHGXZJPAFYNHZN"
 }
 
-CHECK_INTERVAL = 60  # safer interval
+CHECK_INTERVAL = 90  # safer interval
 
 # ===== FLASK APP =====
 app = Flask(__name__)
@@ -74,4 +74,5 @@ if __name__ == "__main__":
     run_background()
 
     app.run(host="0.0.0.0", port=10000)
+
 
