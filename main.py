@@ -6,7 +6,7 @@ from threading import Thread
 
 # ===== TELEGRAM CONFIG FROM RENDER ENV =====
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
-CHAT_ID = os.environ.get("5954672110")
+CHAT_ID = os.environ.get("CHAT_ID")
 
 # ===== PRODUCTS =====
 PRODUCTS = {
@@ -74,3 +74,4 @@ if __name__ == "__main__":
     run_background()
 
     app.run(host="0.0.0.0", port=10000)
+
